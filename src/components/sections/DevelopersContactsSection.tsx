@@ -21,7 +21,7 @@ export function DevelopersContactsSection() {
 
       <Reveal className="mb-6 sm:mb-8" delay={0.04}>
         <div className="mb-4 grid gap-2 border-b border-white/10 pb-4 sm:grid-cols-2 lg:flex lg:flex-wrap lg:items-center lg:gap-x-4 lg:gap-y-2">
-          {developers.map((developer) => (
+          {developers.filter((developer) => developer.id !== 'open-role').map((developer) => (
             <span
               key={`badge-${developer.id}`}
               className="rounded-lg border border-white/10 bg-zinc-900/40 px-2.5 py-2 text-[0.54rem] uppercase tracking-[0.16em] text-zinc-500 lg:border-none lg:bg-transparent lg:px-0 lg:py-0 lg:text-zinc-600"
