@@ -32,7 +32,7 @@ export function DevelopersContactsSection() {
         </div>
       </Reveal>
 
-      <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4 xl:gap-6">
+      <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4 xl:gap-6">
         {developers.map((developer, index) => (
           <Reveal key={developer.id} delay={index * 0.05} className="h-full">
             <DeveloperCard developer={developer} index={index} />
